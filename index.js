@@ -10,8 +10,8 @@ const moment= require('moment');
 
 const { Server } = require("socket.io");
 const io = new Server(server);
-
-const port = 3000;
+require('dotenv').config()
+const port = process.env.PORT;
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 let db;
