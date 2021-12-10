@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Tickets catastro!</title>
+</head>
+<body>
+<nav class="navbar sticky-top navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand">
+            Bienvenido: <small style="font-weight: bold" id="user"></small>
+            <button id="salir" class="btn btn-sm btn-danger"><i class="fa fa-times-circle"></i></button>
+            <small style="font-weight: bold" id="fecha"></small>
+        </a>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-3 mt-2">
+            <div class="card text-center bg-dark text-white">
+                <div class="card-header" >
+                    Distrito 1
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title" id="atenderd1">Distrito 1</h5>
+<!--                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+                    <button id="d1" class="btn btn-success"> <i class="fa fa-check" aria-hidden="true"></i> D1</button>
+                </div>
+                <div class="card-footer text-muted">
+                    Fichas : <small id="cantidadd1" style="color: crimson;font-weight: bold;font-size: 17px">0</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mt-2">
+            <div class="card text-center bg-dark text-white">
+                <div class="card-header" >
+                    Distrito 2
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title" id="atenderd2">Distrito 2</h5>
+                    <!--                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+                    <button id="d2" class="btn btn-success"> <i class="fa fa-check" aria-hidden="true"></i> D2</button>
+                </div>
+                <div class="card-footer text-muted">
+                    Fichas : <small id="cantidadd2" style="color: crimson;font-weight: bold;font-size: 17px">0</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mt-2">
+            <div class="card text-center bg-dark text-white">
+                <div class="card-header" >
+                    Distrito 4
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title" id="atenderd4">Distrito 4</h5>
+                    <!--                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+                    <button id="d4" class="btn btn-success"> <i class="fa fa-check" aria-hidden="true"></i> D4</button>
+                </div>
+                <div class="card-footer text-muted">
+                    Fichas : <small id="cantidadd4" style="color: crimson;font-weight: bold;font-size: 17px">0</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mt-2">
+            <div class="card text-center bg-dark text-white">
+                <div class="card-header" >
+                    Distrito 5
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title" id="atenderd5">Distrito 5</h5>
+                    <!--                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+                    <button id="d5" class="btn btn-success"> <i class="fa fa-check" aria-hidden="true"></i> D5</button>
+                </div>
+                <div class="card-footer text-muted">
+                    Fichas : <small id="cantidadd5" style="color: crimson;font-weight: bold;font-size: 17px">0</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mt-2">
+            <div class="card text-center bg-dark text-white">
+                <div class="card-header" >
+                    Liquidacion 1
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title" id="atenderl1">Liquidacion 1</h5>
+                    <!--                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+                    <button id="l1" class="btn btn-danger"> <i class="fa fa-check" aria-hidden="true"></i> L1</button>
+                </div>
+                <div class="card-footer text-muted">
+                    Fichas : <small id="cantidadl1" style="color: crimson;font-weight: bold;font-size: 17px">0</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mt-2">
+            <div class="card text-center bg-dark text-white">
+                <div class="card-header" >
+                    Liquidacion 2
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title" id="atenderl2">Liquidacion 2</h5>
+                    <!--                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+                    <button id="l2" class="btn btn-danger"> <i class="fa fa-check" aria-hidden="true"></i> L2</button>
+                </div>
+                <div class="card-footer text-muted">
+                    Fichas : <small id="cantidadl2" style="color: crimson;font-weight: bold;font-size: 17px">0</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mt-2">
+            <div class="card text-center bg-dark text-white">
+                <div class="card-header" >
+                    Liquidacion 3
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title" id="atenderl3">Liquidacion 3</h5>
+                    <!--                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+                    <button id="l3" class="btn btn-danger"> <i class="fa fa-check" aria-hidden="true"></i> L3</button>
+                </div>
+                <div class="card-footer text-muted">
+                    Fichas : <small id="cantidadl3" style="color: crimson;font-weight: bold;font-size: 17px">0</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mt-2">
+            <div class="card text-center bg-dark text-white">
+                <div class="card-header" >
+                    Atencion 1
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title" id="atendera1">Atencion 1</h5>
+                    <!--                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+                    <button id="a1" class="btn btn-light"> <i class="fa fa-check" aria-hidden="true"></i> A1</button>
+                </div>
+                <div class="card-footer text-muted">
+                    Fichas : <small id="cantidada1" style="color: crimson;font-weight: bold;font-size: 17px">0</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js" integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js" integrity="sha512-L6Trpj0Q/FiqDMOD0FQ0dCzE0qYT2TFpxkIpXRSWlyPvaLNkGEMRuXoz6MC5PrtcbXtgDLAAI4VFtPvfYZXEtg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/socket.io/socket.io.js"></script>
+
+<script>
+    window.onload=function (){
+        var socket = io();
+        const d1 = document.getElementById('d1')
+        const d2 = document.getElementById('d2')
+        const d4 = document.getElementById('d4')
+        const d5 = document.getElementById('d5')
+        const l1 = document.getElementById('l1')
+        const l2 = document.getElementById('l2')
+        const l3 = document.getElementById('l3')
+        const a1 = document.getElementById('a1')
+        const user = document.getElementById('user')
+        const salir = document.getElementById('salir')
+        const fecha = document.getElementById('fecha')
+        const cantidadd1 = document.getElementById('cantidadd1')
+        const cantidadd2 = document.getElementById('cantidadd2')
+        const cantidadd4 = document.getElementById('cantidadd4')
+        const cantidadd5 = document.getElementById('cantidadd5')
+        const cantidadl1 = document.getElementById('cantidadl1')
+        const cantidadl2 = document.getElementById('cantidadl2')
+        const cantidadl3 = document.getElementById('cantidadl3')
+        const cantidada1 = document.getElementById('cantidada1')
+
+        const atenderd1 = document.getElementById('atenderd1')
+        const atenderd2 = document.getElementById('atenderd2')
+        const atenderd4 = document.getElementById('atenderd4')
+        const atenderd5 = document.getElementById('atenderd5')
+        const atenderl1 = document.getElementById('atenderl1')
+        const atenderl2 = document.getElementById('atenderl2')
+        const atenderl3 = document.getElementById('atenderl3')
+        const atendera1 = document.getElementById('atendera1')
+        salir.style.display="none"
+        logeado=false
+
+        if (!localStorage.getItem("user")){
+            login()
+        }else{
+            // console.log(localStorage.getItem("user"))
+            user.innerHTML=localStorage.getItem("user")
+            salir.style.display=""
+        }
+
+        datos()
+        var cand1,cand2,cand4,cand5,canl1,canl2,canl3,cana1
+        function datos(){
+            fecha.innerHTML=moment().format('YYYY-MM-DD')+','+moment().format('dddd')
+            axios.get('/fichaatendidos').then(res=>{
+                cand1=0
+                cand2=0
+                cand4=0
+                cand5=0
+                canl1=0
+                canl2=0
+                canl3=0
+                cana1=0
+                res.data.forEach(r=>{
+                    // console.log(r)
+                    if (r.distrito=='D1')cand1++
+                    if (r.distrito=='D2')cand2++
+                    if (r.distrito=='D4')cand4++
+                    if (r.distrito=='D5')cand5++
+                    if (r.distrito=='L1')canl1++
+                    if (r.distrito=='L2')canl2++
+                    if (r.distrito=='L3')canl3++
+                    if (r.distrito=='A1')cana1++
+
+                })
+                cantidadd1.innerHTML=cand1
+                cantidadd2.innerHTML=cand2
+                cantidadd4.innerHTML=cand4
+                cantidadd5.innerHTML=cand5
+                cantidadl1.innerHTML=canl1
+                cantidadl2.innerHTML=canl2
+                cantidadl3.innerHTML=canl3
+                cantidada1.innerHTML=cana1
+            })
+        }
+
+        function login(){
+            let usuario=prompt("Usuario")
+            if (usuario=='') login()
+            else axios.get('/usuario/'+usuario).then(res=>{
+                if (res.data.length==1){
+                    alert("Bienvenido!!!!")
+                    // console.log(res.data[0].nombre)
+                    localStorage.setItem("user",res.data[0].nombre)
+                    user.innerHTML=localStorage.getItem("user")
+                    salir.style.display=""
+                }else{
+                    login()
+                }
+            })
+        }
+        salir.addEventListener('click',function (){
+            localStorage.removeItem('user')
+            user.innerHTML=""
+            salir.style.display="none"
+            login()
+        })
+        socket.on('datos', function(msg) {
+           datos()
+        });
+
+        d1.addEventListener('click',function (){
+            axios.put('/ficha/1',{d:'D1',usuario:localStorage.getItem("user")}).then(res=>{
+                if (res.data!=-1){
+                    socket.emit('datos', 'value');
+                    socket.emit('tele', res.data);
+                    atenderd1.innerHTML=res.data.distrito+res.data.numero
+                }else{
+                    atenderd1.innerHTML="0"
+                }
+
+            })
+        })
+        d2.addEventListener('click',function (){
+            axios.put('/ficha/1',{d:'D2',usuario:localStorage.getItem("user")}).then(res=>{
+                if (res.data!=-1){
+                    socket.emit('datos', 'value');
+                    socket.emit('tele', res.data);
+                    atenderd2.innerHTML=res.data.distrito+res.data.numero
+                }else{
+                    atenderd2.innerHTML="0"
+                }
+
+            })
+        })
+        d4.addEventListener('click',function (){
+            axios.put('/ficha/1',{d:'D4',usuario:localStorage.getItem("user")}).then(res=>{
+                if (res.data!=-1){
+                    socket.emit('datos', 'value');
+                    socket.emit('tele', res.data);
+                    atenderd4.innerHTML=res.data.distrito+res.data.numero
+                }else{
+                    atenderd4.innerHTML="0"
+                }
+
+            })
+        })
+        d5.addEventListener('click',function (){
+            axios.put('/ficha/1',{d:'D5',usuario:localStorage.getItem("user")}).then(res=>{
+                if (res.data!=-1){
+                    socket.emit('datos', 'value');
+                    socket.emit('tele', res.data);
+                    atenderd5.innerHTML=res.data.distrito+res.data.numero
+                }else{
+                    atenderd5.innerHTML="0"
+                }
+
+            })
+        })
+
+        l1.addEventListener('click',function (){
+            axios.put('/ficha/1',{d:'L1',usuario:localStorage.getItem("user")}).then(res=>{
+                if (res.data!=-1){
+                    socket.emit('datos', 'value');
+                    socket.emit('tele', res.data);
+                    atenderl1.innerHTML=res.data.distrito+res.data.numero
+                }else{
+                    atenderl1.innerHTML="0"
+                }
+
+            })
+        })
+        l2.addEventListener('click',function (){
+            axios.put('/ficha/1',{d:'L2',usuario:localStorage.getItem("user")}).then(res=>{
+                if (res.data!=-1){
+                    socket.emit('datos', 'value');
+                    socket.emit('tele', res.data);
+                    atenderl2.innerHTML=res.data.distrito+res.data.numero
+                }else{
+                    atenderl2.innerHTML="0"
+                }
+
+            })
+        })
+        l3.addEventListener('click',function (){
+            axios.put('/ficha/1',{d:'L3',usuario:localStorage.getItem("user")}).then(res=>{
+                if (res.data!=-1){
+                    socket.emit('datos', 'value');
+                    socket.emit('tele', res.data);
+                    atenderl3.innerHTML=res.data.distrito+res.data.numero
+                }else{
+                    atenderl3.innerHTML="0"
+                }
+
+            })
+        })
+        a1.addEventListener('click',function (){
+            axios.put('/ficha/1',{d:'A1',usuario:localStorage.getItem("user")}).then(res=>{
+                if (res.data!=-1){
+                    socket.emit('datos', 'value');
+                    socket.emit('tele', res.data);
+                    atendera1.innerHTML=res.data.distrito+res.data.numero
+                }else{
+                    atendera1.innerHTML="0"
+                }
+
+            })
+        })
+        function imprimir(res){
+            myWindow = window.open("", "myWindow", "width=300,height=200");
+            myWindow.document.write(
+                '<div style="padding-left: 5px; text-align: center">' +
+                '<div style="width:100%;text-align: center;font-size: 3em"><b>G.A.M.O.</b></div>' +
+                '<small>Gobierno Autonomo Municipal de Oruro</small><br>'+
+                '<small>Unidad de catastro urbano</small>'+
+                '<div style="width:100%;text-align: center;font-size: 3em""><b>'+res.data.distrito+res.data.numero+'</b></div><br>'+
+                '<small>Fecha hora:'+moment().format('MMMM Do YYYY, h:mm:ss a')+'</small><br>'+
+                '<small>La atencion es de máximo de 1 hra si el tiempo sobre pasa hablar con adminitracion porfavor</small><br>'+
+                '</div>'
+            );
+            myWindow.document.close();
+            myWindow.focus();
+            myWindow.print();
+            myWindow.close();
+        }
+    }
+</script>
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+-->
+</body>
+</html>
